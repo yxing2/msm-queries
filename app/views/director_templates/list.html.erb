@@ -12,13 +12,9 @@
 <% Director.all.each do |a_director| %>
   <tr>
     <td><%= a_director.id %></td>
-    <td>
-      <img src="<%= a_director.image %>" width=50>
-    </td>
+    <td><img src="<%= a_director.image %>" width=50></td>
     <td><%= a_director.name %></td>
     <td><%= a_director.dob %></td>
-    <td>
-      <a href="/directors/<%= a_director.id %>">Show details
-    </td>
+    <td><a href="/directors/<%= a_director.id %>">Show details</td>
 <% end %>
 </table>
