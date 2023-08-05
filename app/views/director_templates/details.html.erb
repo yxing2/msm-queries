@@ -20,7 +20,6 @@
 <hr>
 
 <h1>Filmography</h1>
-<% matching_movies = Movie.where({ :director_id => @the_director.id }) %>
 
 <table border="1">
   <tr>
@@ -31,7 +30,8 @@
     <th>Director</th>
     <th></th>
   </tr>
-
+  
+<% matching_movies = Movie.where({ :director_id => @the_director.id }) %>
 <% matching_movies.each do |a_movie| %>
   <tr>
     <td><%= a_movie.id %></td>
